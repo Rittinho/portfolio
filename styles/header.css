@@ -1,5 +1,9 @@
 .header-container {
-  width: 100dvh;
-  height: 200px;
-  background-color: #f5b949;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100dvw;
+  height: 150px;
+  background-color: #121212;
+  border-radius: 0px 0px 6px 0px;
 }
