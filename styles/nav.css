@@ -1,0 +1,21 @@
+#side-control {
+  position: relative;
+  height: 100dvh;
+  width: 486px;
+  border-radius: 0px 14px 14px 0px;
+  background-color: var(--sideColor);
+}
+#side-control::after {
+  --_color: linear-gradient(var(--primaryColor), var(--secundaryColor));
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -14px;
+  left: -14px;
+  right: -14px;
+  bottom: -14px;
+  background: var(--_color);
+  border-radius: 14px;
+}
+.side-menu-container {
+}

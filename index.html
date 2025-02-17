@@ -12,15 +12,22 @@
     />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      :root {
+        --backColor: #383d45;
+        --sideColor: #121212;
+        --textColor: #ffffff;
+        --primaryColor: #5d3fd3;
+        --secundaryColor: #3cb371;
+      }
       * {
+        box-sizing: border-box;
+        text-decoration: none;
         margin: 0;
         padding: 0;
+        border: 0;
       }
       body {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
         background-color: #f5f5f5;
       }
     </style>
@@ -32,12 +39,46 @@
     <title>Israel mendes</title>
   </head>
   <body>
-    <header>
-      <aside class="side-menu-container">
-        <div></div>
-      </aside>
-    </header>
-    <main></main>
+    <header id="header-control"></header>
+    <aside id="side-control">
+      <div class="side-menu-container">
+        <button id="buttontheme" type="button" title="btheme">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+        <a
+          class="mini-button"
+          href="https://github.com/Rittinho"
+          target="_blank"
+        >
+          <button>
+            <i class="fa-brands fa-github"></i>
+          </button>
+        </a>
+      </div>
+    </aside>
+    <main id="main-control">
+      <div class="main-border-container">
+        <div class="test"></div>
+        <h1>CABEÇALHO</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+          quis? Explicabo rerum doloremque eaque deserunt porro eveniet quidem
+          recusandae labore repellat, est expedita ab pariatur fugit vitae ipsa
+          id minus?
+        </p>
+      </div>
+      <div class="main-full-container">
+        <div class="test"></div>
+        <h1>CABEÇALHO</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+          quis? Explicabo rerum doloremque eaque deserunt porro eveniet quidem
+          recusandae labore repellat, est expedita ab pariatur fugit vitae ipsa
+          id minus?
+        </p>
+      </div>
+    </main>
     <footer></footer>
+    <script src="script.js"></script>
   </body>
 </html>
