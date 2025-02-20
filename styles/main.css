@@ -1,17 +1,15 @@
 #main-control {
-  height: 100dvh;
-  width: 100dvw;
-  background-color: var(--backColor);
-  overflow: auto;
+  padding-top: 150px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.main-border-container {
-  margin: 30px;
-  width: calc(90dvw -10px);
-  height: 400px;
-  background-color: lightgray;
-}
-.main-full-container {
-  width: calc(90dvw -10px);
-  height: 400px;
-  background-color: #d3d3d3;
+.test {
+  flex-shrink: 0;
+  margin: 20px;
+  height: 300px;
+  width: 95%;
+  border-radius: 24px;
+  background-color: var(--primaryColor);
 }

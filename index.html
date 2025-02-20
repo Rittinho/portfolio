@@ -13,11 +13,12 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
       :root {
-        --backColor: #383d45;
-        --sideColor: #121212;
+        --backColor: #121212;
+        --strongColor: #ff2e63;
         --textColor: #ffffff;
-        --primaryColor: #5d3fd3;
-        --secundaryColor: #3cb371;
+        --primaryColor: #00adb5;
+        --secundaryColor: #ff6347;
+        --buttonBorderColor: #00adb5;
       }
       * {
         box-sizing: border-box;
@@ -26,9 +27,17 @@
         padding: 0;
         border: 0;
       }
+      html,
+      body {
+        overflow-x: hidden;
+        width: 100%;
+      }
       body {
         display: flex;
-        background-color: #f5f5f5;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--backColor);
       }
     </style>
     <link rel="stylesheet" href="styles/header.css" />
@@ -39,44 +48,66 @@
     <title>Israel mendes</title>
   </head>
   <body>
-    <header id="header-control"></header>
-    <aside id="side-control">
-      <div class="side-menu-container">
-        <button id="buttontheme" type="button" title="btheme">
-          <i class="fa-solid fa-circle-half-stroke"></i>
-        </button>
-        <a
-          class="mini-button"
-          href="https://github.com/Rittinho"
-          target="_blank"
-        >
+    <header id="header-control">
+      <div id="fist-view">
+        <div id="fv-left-container">
+          <h1>Israel mendes</h1>
+          <h2>Desenvolvedor</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+            reiciendis nihil eaque aperiam. Tempore aliquam, id soluta, facilis
+            vitae adipisci velit beatae sed dolores, inventore quidem doloribus
+            iusto voluptatum dignissimos. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Eaque hic libero neque repudiandae, quae ex
+            accusamus quam, harum animi dolorem voluptatibus repellat. Nesciunt
+            deserunt debitis a maxime veniam fuga quam?
+          </p>
+        </div>
+        <div id="fv-right-container">
+          <img src="source/images/gostosin.png" alt="" />
           <button>
-            <i class="fa-brands fa-github"></i>
+            <p>Contate-me</p>
+            <i class="fa-solid fa-caret-down fa-bounce"></i>
           </button>
-        </a>
+        </div>
       </div>
-    </aside>
+      <div id="menu-bar">
+        <div id="buttons-side">
+          <button class="menu-button" type="button">
+            <p>Home</p>
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <button class="menu-button" type="button">
+            <p>Aboute me</p>
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <button class="menu-button" type="button">
+            <p>Projects</p>
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <button class="menu-button" type="button">
+            <p>Contacts</p>
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+        </div>
+        <div id="accessibility-side">
+          <button id="theme-button" type="button" title="Theme">
+            <i class="fa-solid fa-cloud-moon"></i>
+          </button>
+          <button id="accessibility-button" type="button" title="accessibility">
+            <i class="fa-solid fa-universal-access"></i>
+          </button>
+          <div></div>
+        </div>
+      </div>
+    </header>
     <main id="main-control">
-      <div class="main-border-container">
-        <div class="test"></div>
-        <h1>CABEÇALHO</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
-          quis? Explicabo rerum doloremque eaque deserunt porro eveniet quidem
-          recusandae labore repellat, est expedita ab pariatur fugit vitae ipsa
-          id minus?
-        </p>
-      </div>
-      <div class="main-full-container">
-        <div class="test"></div>
-        <h1>CABEÇALHO</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
-          quis? Explicabo rerum doloremque eaque deserunt porro eveniet quidem
-          recusandae labore repellat, est expedita ab pariatur fugit vitae ipsa
-          id minus?
-        </p>
-      </div>
+      <div class="test"></div>
+      <div class="test"></div>
+      <div class="test"></div>
+      <div class="test"></div>
+      <div class="test"></div>
+      <div class="test"></div>
     </main>
     <footer></footer>
     <script src="script.js"></script>
