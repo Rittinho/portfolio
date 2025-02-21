@@ -1,6 +1,15 @@
-@use "base";
-@use "base/animations";
-@use "components";
-@use "components/animations/";
-@use "layout";
-@use "layout/animations/";
+@use "base/base";
+@use "base/mixins" as *;
+@use "base/reset";
+@use "base/variables";
+
+// ==============================================
+@use "components/cards";
+@use "components/form";
+@use "components/social-buttons.scss";
+//==========================================
+@use "layout/grid";
+@use "layout/header";
+@use "layout/main";
+@use "layout/sidebar";
+@use "layout/footer";
