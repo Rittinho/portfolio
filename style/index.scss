@@ -1,5 +1,6 @@
-@use "header";
-@use "nav";
-@use "main";
-@use "footer";
+@use "base";
+@use "base/animations";
 @use "components";
+@use "components/animations/";
+@use "layout";
+@use "layout/animations/";

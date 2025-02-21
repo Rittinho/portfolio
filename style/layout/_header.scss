@@ -28,14 +28,6 @@
   background: linear-gradient(90deg, rgb(53, 50, 85), rgb(83, 43, 43), purple);
   background-size: 300% 300%;
 }
-@keyframes gradiento {
-  from {
-    background-position: 0 50%;
-  }
-  to {
-    background-position: 100% 50%;
-  }
-}
 #fv-right-container {
   display: flex;
   align-items: center;

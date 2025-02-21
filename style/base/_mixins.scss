@@ -1,0 +1,13 @@
+@mixin centralizeElement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin debugContainer($hight, $width, $color, $center) {
+  @if $center {
+    @include centralizeElement();
+  }
+  height: $hight;
+  width: $width;
+  background-color: $color;
+}
