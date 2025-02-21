@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Meu portfólio",
+  "scripts": {
+    "sass": "sass --watch style/index.scss:css/index.css"
+  },
+  "devDependencies": {
+    "sass": "^1.85.0"
+  }
+}

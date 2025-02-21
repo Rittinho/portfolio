@@ -1,0 +1,229 @@
+.github-button {
+  border: transparent;
+  background-color: transparent;
+  & div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0px 20px 0px 20px;
+    width: 320px;
+    border-radius: 6px;
+    background-color: #0d1117;
+    box-shadow: 9px 9px 0px tomato;
+    & p {
+      font-family: "Pixelify Sans", serif;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    & i {
+      font-size: 40px;
+      color: white;
+    }
+  }
+}
+.linkedin-button {
+  border: transparent;
+  background-color: transparent;
+  & div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 320px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 6px;
+    background-color: #0077b5;
+    box-shadow: 9px 9px 0px tomato;
+    & p {
+      text-align: center;
+      font-family: "Pixelify Sans", serif;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    & i {
+      font-size: 40px;
+      color: white;
+    }
+  }
+}
+.instagram-button {
+  border: transparent;
+  background-color: transparent;
+  & div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 320px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 6px;
+    background: #833ab4;
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    box-shadow: 9px 9px 0px tomato;
+    & p {
+      font-family: "Pixelify Sans", serif;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    & i {
+      font-weight: bold;
+      font-size: 40px;
+      color: white;
+    }
+  }
+}
+.whatsapp-button {
+  border: transparent;
+  background-color: transparent;
+  & div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 320px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 6px;
+    background-color: #128c53;
+    box-shadow: 9px 9px 0px tomato;
+    & p {
+      font-family: "Pixelify Sans", serif;
+      color: #ece5dd;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    & i {
+      font-weight: bold;
+      font-size: 40px;
+      color: #ece5dd;
+    }
+  }
+}
+.mini-button {
+  text-decoration: none;
+  & button {
+    border: transparent;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 14px;
+    border: 4px solid var(--secundaryColor);
+  }
+  & i {
+    font-size: 40px;
+    color: var(--primaryColor);
+  }
+}
+.menu-button {
+  border: transparent;
+  background-color: transparent;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  width: 300px;
+  border-radius: 14px;
+  border: 4px solid var(--buttonBorderColor);
+  & i {
+    color: var(--textColor);
+    margin: 20px;
+    font-size: 35px;
+  }
+  & p {
+    font-family: "Pixelify Sans", serif;
+    font-weight: bold;
+    color: var(--textColor);
+    font-size: 35px;
+  }
+}
+#accessibility-button {
+  border: transparent;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  height: 110px;
+  width: 110px;
+  border-radius: 14px;
+  border: 4px solid var(--buttonBorderColor);
+  & i {
+    font-size: 50px;
+    color: var(--textColor);
+  }
+}
+#theme-button {
+  border: transparent;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  height: 110px;
+  width: 110px;
+  border-radius: 14px;
+  border: 4px solid var(--buttonBorderColor);
+  & i {
+    font-size: 50px;
+    color: var(--textColor);
+  }
+  transition-property: border-radius;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+@keyframes pulando {
+  to {
+    transform: translateY(-10px);
+  }
+}
+#theme-button:hover {
+  border-radius: 110px;
+  & i {
+    animation: pulando 2s ease infinite alternate;
+  }
+}
+.title-component {
+  overflow: hidden;
+  position: relative;
+  font-family: "Pixelify Sans", serif;
+  color: var(--textColor);
+  text-shadow: 4px 6px 1px var(--strongColor);
+  font-size: 80px;
+}
+.sub_title-component {
+  font-family: "Audiowide", serif;
+  color: var(--secundaryColor);
+  font-size: 40px;
+  margin: 10px;
+}
+.sub_title-component::before {
+  content: "";
+  display: block;
+  background-color: var(--textColor);
+  height: 7px;
+  width: 450px;
+  margin: 10px auto;
+}
+.sub_title-component::after {
+  content: "";
+  display: block;
+  background-color: var(--textColor);
+  height: 7px;
+  width: 400px;
+  margin: 10px auto;
+}
+.text-component {
+  width: 70%;
+  color: var(--textColor);
+  font-family: "Poppins", serif;
+  font-size: 24px;
+  text-align: center;
+  justify-content: center;
+}

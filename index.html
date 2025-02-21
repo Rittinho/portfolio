@@ -11,7 +11,7 @@
       referrerpolicy="no-referrer"
     />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
       :root {
         --backColor: #121212;
         --strongColor: #ff2e63;
@@ -27,6 +27,8 @@
         padding: 0;
         border: 0;
       }
+      h1 {
+      }
       html,
       body {
         overflow-x: hidden;
@@ -37,23 +39,20 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        min-height: 100px;
         background-color: var(--backColor);
       }
     </style>
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/nav.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <title>Israel mendes</title>
   </head>
   <body>
     <header id="header-control">
       <div id="fist-view">
         <div id="fv-left-container">
-          <h1>Israel mendes</h1>
-          <h2>Desenvolvedor</h2>
-          <p>
+          <h1 class="title-component">Israel mendes</h1>
+          <h2 class="sub_title-component">Desenvolvedor Full-Stack</h2>
+          <p class="text-component">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
             reiciendis nihil eaque aperiam. Tempore aliquam, id soluta, facilis
             vitae adipisci velit beatae sed dolores, inventore quidem doloribus
@@ -102,12 +101,53 @@
       </div>
     </header>
     <main id="main-control">
-      <div class="test"></div>
-      <div class="test"></div>
-      <div class="test"></div>
-      <div class="test"></div>
-      <div class="test"></div>
-      <div class="test"></div>
+      <div class="fly-container"></div>
+      <div class="full-container"></div>
+      <div class="fly-container"></div>
+      <div class="full-container"></div>
+      <div class="fly-container"></div>
+      <div class="full-container"></div>
+      <div class="fly-container"></div>
+      <div class="full-container">
+        <div class="button-fild">
+          <a
+            class="mini-button"
+            href="https://www.instagram.com/israelmendes_0421/"
+            target="_blank"
+          >
+            <button>
+              <i class="fa-brands fa-instagram"></i>
+            </button>
+          </a>
+          <a
+            class="mini-button"
+            href="https://github.com/Rittinho"
+            target="_blank"
+          >
+            <button>
+              <i class="fa-brands fa-github"></i>
+            </button>
+          </a>
+          <a
+            class="mini-button"
+            href="https://wa.me/551195570670"
+            target="_blank"
+          >
+            <button>
+              <i class="fa-brands fa-whatsapp"></i>
+            </button>
+          </a>
+          <a
+            class="mini-button"
+            href="https://www.linkedin.com/in/israel-mendes-71651b34b/"
+            target="_blank"
+          >
+            <button>
+              <i class="fa-brands fa-linkedin"></i>
+            </button>
+          </a>
+        </div>
+      </div>
     </main>
     <footer></footer>
     <script src="script.js"></script>

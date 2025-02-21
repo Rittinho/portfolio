@@ -1,0 +1,101 @@
+#header-control {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100px;
+  height: 100dvh;
+  background-color: var(--backColor);
+}
+#fist-view {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92%;
+  width: 100%;
+  background-color: var(--backColor);
+  padding: 40px;
+}
+#fv-left-container {
+  animation: gradiento 10s ease infinite alternate-reverse;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+  border-radius: 24px;
+  background: linear-gradient(90deg, rgb(53, 50, 85), rgb(83, 43, 43), purple);
+  background-size: 300% 300%;
+}
+@keyframes gradiento {
+  from {
+    background-position: 0 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+#fv-right-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+  & img {
+    border: 6px solid var(--buttonBorderColor);
+    width: 400px;
+    border-radius: 200px;
+  }
+  & button {
+    transform: translateX(-80px);
+    border: transparent;
+    background-color: transparent;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    width: 350px;
+    border-radius: 14px;
+    background-color: var(--buttonBorderColor);
+    & i {
+      color: #ffffff;
+      margin: 20px;
+      font-size: 35px;
+    }
+    & p {
+      font-family: "Pixelify Sans", serif;
+      font-weight: bold;
+      color: #ffffff;
+      font-size: 35px;
+    }
+  }
+}
+#menu-bar {
+  position: sticky;
+  top: 0px;
+  border-top: 4px solid rgb(128, 128, 128);
+  border-bottom: 4px solid rgb(128, 128, 128);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16%;
+  width: 100%;
+  background-color: var(--backColor);
+}
+#buttons-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 76%;
+}
+#accessibility-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 20%;
+}
