@@ -1,3 +1,5 @@
+@use "../base/mixins" as *;
+@use "../animations/name-revel" ;
 .github-button {
   border: transparent;
   background-color: transparent;
@@ -190,6 +192,7 @@
   }
 }
 .title-component {
+  animation: test 2s infinite alternate;
   overflow: hidden;
   position: relative;
   font-family: "Pixelify Sans", serif;
